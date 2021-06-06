@@ -56,8 +56,8 @@ body{
     position: absolute;
     width:472px;
     height: 472px;
-    left: -12%;
-    top: 6%;
+    left: -3vw;
+    top: 11%;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-size: 100%;
     z-index:100;
