@@ -9,6 +9,7 @@ body{
 }
 
 .wrap_cont{
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,6 +17,57 @@ body{
     width:80vw;
     height: 510px;
     background:#fff;
+    border-radius: 3%;
+}
+
+.cont_left, .cont_right{
+    width:50%;
+}
+
+.cont_left{
+    position: relative;
+    overflow: hidden;
+}
+
+   .wrap_cont::before{
+    content: '';
+    position:absolute;
+    display: block;
+    left:-2.5%;
+    top:52%;
+    width: 141px;
+    height: 107px;
+    background: url(./images/illustration-box-desktop.svg);
+    transform: translate(-50%, -50%);
+    z-index: 300;
+}
+
+.img_main{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); /* 중앙정렬 활용해서 밀리게 하기 */
+    z-index:200;
+}
+
+.cont_left::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width:472px;
+    height: 472px;
+    left: -12%;
+    top: 6%;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: 100%;
+    z-index:100;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left:35%;
+    transform: translate(-50%, -50%);
 }
 
 .attribution {
