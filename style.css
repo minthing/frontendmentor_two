@@ -3,6 +3,7 @@ html,body{
     height: 100%;
     margin:0;
     padding:0;
+    color:hsl(238, 29%, 16%);
 }
 
 body{
@@ -94,7 +95,8 @@ body{
     position: relative;
     width: 78%;
     padding: 15px 30px 15px 10px;
-    border-bottom: 1px solid hsl(240, 5%, 91%)
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    cursor: pointer;
 }
 
 .cont_right .list_item::before{
@@ -103,12 +105,24 @@ body{
     height: 6px;
     position: absolute;
     right: 25px;
-    top: 20px;
+    top: 19px;
     background: url(./images/icon-arrow-down.svg);
+}
+
+.cont_right .list_item.active::before{
+    transform: rotate(180deg);
 }
 
 .cont_right .inner_item{
     display: none;
+}
+
+.cont_right .list_item.active .inner_item{
+    display: block;
+    padding:20px 0 5px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color:hsl(240, 6%, 50%)
 }
 
 .attribution {
