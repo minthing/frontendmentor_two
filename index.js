@@ -1,5 +1,3 @@
-console.log("helloWorld");
-
 const list = document.querySelector('.wrap_list');
 const lists = document.querySelectorAll('.list_item');
 let count;
