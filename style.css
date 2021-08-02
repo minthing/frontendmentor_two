@@ -164,6 +164,11 @@ body{
         overflow: visible;
     }
 
+    .title{
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .img_main.mobile{
         display: block;
         top: 50%;
